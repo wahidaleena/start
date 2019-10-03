@@ -4,7 +4,7 @@ DATA DIVISION.
    WORKING-STORAGE SECTION.
    01 WS-STRING PIC X(15) VALUE 'ABCDACDADEAAAFF'.
 PROCEDURE DIVISION.
-   START file-name KEY IS [=, >, <, NOT, <= or >=] rec-key
+   START file-name KEY IS > rec-key
       INVALID KEY DISPLAY 'Invalid Key'
       NOT INVALID KEY DISPLAY 'File Pointer Updated'
    END-START.
